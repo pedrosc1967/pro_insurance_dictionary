@@ -76,6 +76,7 @@ PODS:
   - onesignal_flutter (2.6.2):
     - Flutter
     - OneSignal (= 2.16.1)
+  - OneSignalXCFramework (3.8.1)
   - package_info (0.0.1):
     - Flutter
   - PromisesObjC (1.2.11)
@@ -104,8 +105,8 @@ DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `Flutter`)
   - flutter_tts (from `.symlinks/plugins/flutter_tts/ios`)
-  - OneSignal (< 3.0, >= 2.9.3)
   - onesignal_flutter (from `.symlinks/plugins/onesignal_flutter/ios`)
+  - OneSignalXCFramework (< 4.0, >= 3.4.3)
   - package_info (from `.symlinks/plugins/package_info/ios`)
   - rate_my_app (from `.symlinks/plugins/rate_my_app/ios`)
   - sentry_flutter (from `.symlinks/plugins/sentry_flutter/ios`)
@@ -126,6 +127,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - OneSignal
+    - OneSignalXCFramework
     - PromisesObjC
     - Sentry
     - Try
@@ -172,6 +174,7 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   OneSignal: 5f6514ec2b931306eb067acb124afbb2e49970af
   onesignal_flutter: 260bb95c0a2d791c990c7bd8749525c9834d43fc
+  OneSignalXCFramework: cd6290d43d4f7dd0443d34e7be8b95996417644e
   package_info: 15749268925eb7e487f95d5dcf16222bbc3350e4
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   rate_my_app: 4acfee11e5714fb356f253ee49de734f22310898
@@ -183,6 +186,6 @@ SPEC CHECKSUMS:
   Try: 5ef669ae832617b3cee58cb2c6f99fb767a4ff96
   url_launcher: 269982f8818077ab1abfb1df348eff7e8c459ade
 
-PODFILE CHECKSUM: a1b19beff36f170242f932135a4c13b7f734ac8b
+PODFILE CHECKSUM: 7507a4a602b66159a7878cc85dddc964d611668b
 
 COCOAPODS: 1.10.1

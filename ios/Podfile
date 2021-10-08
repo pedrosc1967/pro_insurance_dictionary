@@ -42,7 +42,7 @@ pod 'Firebase/Analytics'
 # esto de OneSignal estaba sin comentar
 target 'OneSignalNotificationServiceExtension' do
   use_frameworks!
-  pod 'OneSignal', '>= 2.9.3', '< 3.0'
+  pod 'OneSignalXCFramework', '>= 3.4.3', '< 4.0'
 end
 
 post_install do |installer|

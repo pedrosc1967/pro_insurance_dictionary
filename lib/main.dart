@@ -1,9 +1,7 @@
-// import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pro_insurance_dictionary/alphabetical_screen.dart';
 import 'dart:io' show Platform;
-// import 'facebook_code.dart';
 import 'listentries.dart';
 import 'navigate.dart';
 import 'constants.dart';
@@ -129,7 +127,7 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
     //Remove this method to stop OneSignal Debugging
     OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
 
-    OneSignal.shared.init("934893a3-d7e2-4130-a314-fe29eb59f5f4", iOSSettings: {
+    OneSignal.shared.init("c3efc5ba-8816-4fc8-899c-24441dbab427", iOSSettings: {
       OSiOSSettings.autoPrompt: false,
       OSiOSSettings.inAppLaunchUrl: false
     });
@@ -170,8 +168,6 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
 // For each of the above functions, you can also pass in a
 // reference to a function as well:....
 
-    // loadInterstitialAd();
-    // loadBannerAd();
     WidgetsBinding.instance.addObserver(this);
     super.initState();
     _initPackageInfo();
@@ -294,7 +290,7 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
           )
         ],
       ),
-      // Hamburguer menu AKA drawer in flutter
+      // Hamburger menu AKA drawer in flutter
       drawer: Drawer(
         child: ListView(
           children: <Widget>[
