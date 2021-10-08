@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:insurance_dictionary/alpha_searched_screen.dart';
+import 'package:pro_insurance_dictionary/alpha_searched_screen.dart';
 import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:insurance_dictionary/utils/responsive.dart';
-import 'package:insurance_dictionary/constants.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/constants.dart';
 
 // ignore: must_be_immutable
 class AlphabeticalScreen extends StatefulWidget {

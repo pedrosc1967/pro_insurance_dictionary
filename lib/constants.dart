@@ -13,7 +13,7 @@ class Constants {
   static const String URLAplanetBitAndroid = 'https://aplanetbit.com';
   static const String URLAplanetBitiOS = 'https://aplanetbit.com/?page_id=1359';
   static const String URLRateUsAndroid =
-      'https://play.google.com/store/apps/details?id=com.aplanetbit.dictionary.insurance';
+      'https://play.google.com/store/apps/details?id=com.aplanetbit.pro.dictionary.insurance';
   static const String URLRateUSIOS =
       'https://apps.apple.com/us/app/dictionary-of-insurance/id1545741185?action=write-review';
   static const double heigthPercentFontSize = 2.7;

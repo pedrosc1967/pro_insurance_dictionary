@@ -1,4 +1,4 @@
-library insurance_dictionary.globals;
+library pro_insurance_dictionary.globals;
 
 String dataFilename;
 String defaultLocale;

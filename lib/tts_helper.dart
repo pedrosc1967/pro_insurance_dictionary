@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'dart:io' show Platform;
-import 'package:insurance_dictionary/globals.dart';
+import 'package:pro_insurance_dictionary/globals.dart';
 
 enum TtsState { playing, stopped }
 

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:insurance_dictionary/globals.dart';
+import 'package:pro_insurance_dictionary/globals.dart';
 import 'destination.dart';
 import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:pro_insurance_dictionary/constants.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
 
 // ignore: must_be_immutable
 class AlphaSearchedScreen extends StatefulWidget {
@@ -70,6 +72,7 @@ class _SearchScreenState extends State<AlphaSearchedScreen> {
                   return ListView.builder(
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, int index) {
+                      final Responsive responsive = Responsive(context);
                       var entrada = results[index];
 
                       return Container(
@@ -105,8 +108,9 @@ class _SearchScreenState extends State<AlphaSearchedScreen> {
                             entrada['Entry'],
                             style: TextStyle(
                               color: Colors.white,
-                              fontFamily: 'Raleway',
-                              fontSize: 18.0,
+                              //    fontFamily: 'Raleway',
+                              fontSize: responsive
+                                  .hp(Constants.heigthPercentFontSize),
                             ),
                           ),
                         ),

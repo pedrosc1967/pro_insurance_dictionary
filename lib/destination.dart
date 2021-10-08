@@ -1,11 +1,11 @@
 // import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
-import 'package:insurance_dictionary/tts_helper.dart';
+import 'package:pro_insurance_dictionary/tts_helper.dart';
 // import 'facebook_code.dart';
 import 'package:share/share.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:insurance_dictionary/utils/responsive.dart';
-import 'package:insurance_dictionary/constants.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/constants.dart';
 
 // ignore: must_be_immutable...
 class Destination extends StatefulWidget {

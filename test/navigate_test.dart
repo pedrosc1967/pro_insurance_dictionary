@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:insurance_dictionary/navigate.dart';
+import 'package:pro_insurance_dictionary/navigate.dart';
 import 'dart:io' as io;
+
+import 'package:pro_insurance_dictionary/navigate.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

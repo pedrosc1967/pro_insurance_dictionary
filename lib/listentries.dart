@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'package:insurance_dictionary/constants.dart';
-import 'package:insurance_dictionary/globals.dart';
-import 'package:insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/constants.dart';
+import 'package:pro_insurance_dictionary/globals.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
 import 'destination.dart';
-//import 'package:insurance_dictionary/facebook_code.dart';
+//import 'package:pro_insurance_dictionary/facebook_code.dart';
 //import 'dart:io';
 
 class ListEntries extends StatefulWidget {

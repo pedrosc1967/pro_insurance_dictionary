@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'destination.dart';
 import 'dart:convert';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
-import 'package:insurance_dictionary/globals.dart';
+import 'package:pro_insurance_dictionary/globals.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/constants.dart';
 
 String query;
 String hint = 'search_voice'.tr();
@@ -43,7 +44,6 @@ filterSearchResults(query) async {
         .where((item) =>
             item['Entry'].toString().contains(query.toString().capitalize()))
         .toList();
-    // print(results);
     return results;
   } on FormatException {
     print('Unexpected character');
@@ -87,12 +87,15 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final Responsive responsive = Responsive(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
           'back_menu'.tr(),
-          style: TextStyle(fontSize: 20),
+          style: TextStyle(
+            fontSize: responsive.hp(Constants.heigthPercentFontSize),
+          ),
         ),
       ),
       body: Container(
@@ -113,6 +116,9 @@ class _SearchScreenState extends State<SearchScreen> {
                 decoration: InputDecoration(
                   labelText: 'search'.tr(),
                   hintText: hint,
+                  hintStyle: TextStyle(
+                    fontSize: responsive.hp(Constants.heigthPercentFontSize),
+                  ),
                   prefixIcon: IconButton(
                     onPressed: () {
                       voiceSearch();
@@ -187,7 +193,8 @@ class _SearchScreenState extends State<SearchScreen> {
                             style: TextStyle(
                               color: Colors.white,
                               // fontFamily: 'Raleway',
-                              fontSize: 18.0,
+                              fontSize: responsive
+                                  .hp(Constants.heigthPercentFontSize),
                             ),
                           ),
                         ),

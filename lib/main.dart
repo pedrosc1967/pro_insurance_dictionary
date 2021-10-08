@@ -1,7 +1,7 @@
 // import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:insurance_dictionary/alphabetical_screen.dart';
+import 'package:pro_insurance_dictionary/alphabetical_screen.dart';
 import 'dart:io' show Platform;
 // import 'facebook_code.dart';
 import 'listentries.dart';
@@ -25,7 +25,7 @@ import 'package:speech_to_text/speech_to_text.dart' as stt;
 import 'package:share/share.dart';
 import 'globals.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:insurance_dictionary/utils/responsive.dart';
+import 'package:pro_insurance_dictionary/utils/responsive.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,11 +34,15 @@ Future<void> main() async {
     SentryFlutter.init(
       (options) {
         options.dsn =
-            'https://7470e4eeb50e49fdba47b5e48d4e09f6@o496488.ingest.sentry.io/5571285';
+            'https://c04993e9d98042c19e1c7bae6479c16f@o496488.ingest.sentry.io/5998091';
       },
     )
   ];
   runApp(
+    //Sentry start
+
+    //Sentry end
+
     EasyLocalization(
       supportedLocales: [
         Locale('en', 'US'),
