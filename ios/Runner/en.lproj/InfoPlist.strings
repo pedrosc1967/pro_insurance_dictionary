@@ -1,1 +1,2 @@
 CFBundleDisplayName = "Dictionary of Insurance";
+NSLocationWhenInUseUsageDescription = "Location needed to optimize user experience";
