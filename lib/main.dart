@@ -5,10 +5,10 @@ import 'dart:io' show Platform;
 import 'listentries.dart';
 import 'navigate.dart';
 import 'constants.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
+//import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'dart:io';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
+//import 'package:firebase_analytics/firebase_analytics.dart';
+//import 'package:firebase_analytics/observer.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'dart:async';
 import 'package:package_info/package_info.dart';
@@ -27,15 +27,17 @@ import 'package:pro_insurance_dictionary/utils/responsive.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
   await [
-    Firebase.initializeApp(),
     SentryFlutter.init(
       (options) {
         options.dsn =
             'https://c04993e9d98042c19e1c7bae6479c16f@o496488.ingest.sentry.io/5998091';
       },
-    )
+    ),
+    Firebase.initializeApp(),
   ];
+
   runApp(
     //Sentry start
 
@@ -57,9 +59,9 @@ Future<void> main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static FirebaseAnalytics analytics = FirebaseAnalytics();
-  static FirebaseAnalyticsObserver observer =
-      FirebaseAnalyticsObserver(analytics: analytics);
+//  static FirebaseAnalytics analytics = FirebaseAnalytics();
+//  static FirebaseAnalyticsObserver observer =
+//      FirebaseAnalyticsObserver(analytics: analytics);
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +73,7 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       home: HomePage(),
       navigatorObservers: [
-        FirebaseAnalyticsObserver(analytics: analytics),
+        // FirebaseAnalyticsObserver(analytics: analytics),
       ],
     );
   }
@@ -124,13 +126,19 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
       },
     );
 
+    /*
+    Massive fail after updating to flutter 2.5.1
+    All OneSignal code was failing and needed to be commented out
+     */
     //Remove this method to stop OneSignal Debugging
+    /*
     OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
 
     OneSignal.shared.init("c3efc5ba-8816-4fc8-899c-24441dbab427", iOSSettings: {
       OSiOSSettings.autoPrompt: false,
       OSiOSSettings.inAppLaunchUrl: false
     });
+
     OneSignal.shared
         .setInFocusDisplayType(OSNotificationDisplayType.notification);
 
@@ -167,6 +175,8 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
 // For each of the above functions, you can also pass in a
 // reference to a function as well:....
+
+     */
 
     WidgetsBinding.instance.addObserver(this);
     super.initState();

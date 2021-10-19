@@ -10,6 +10,7 @@ import Firebase
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
       FirebaseApp.configure()
+    /*  OneSignal failed after upgrading Flutter to 2.5.2
     //Remove this method to stop OneSignal Debugging
     OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
 
@@ -30,6 +31,7 @@ import Firebase
       print("User accepted notifications: \(accepted)")
     })
     //END OneSignal initializataion code
+     */
 
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)

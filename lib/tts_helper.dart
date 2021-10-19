@@ -11,7 +11,7 @@ dynamic languages;
 String language;
 double volume = 1.0;
 double pitch = 1.0;
-double rate = 0.2;
+double rate = 0.3;
 
 TtsState ttsState = TtsState.stopped;
 
@@ -25,7 +25,7 @@ initTts() {
   getLanguages();
 
   if (Platform.isAndroid) {
-    rate = 1.1;
+    rate = 0.6;
   } else {
     rate = 0.48;
   }
@@ -52,7 +52,7 @@ initTts() {
 
 Future getLanguages() async {
   languages = await flutterTts.getLanguages;
-  print("pritty print $languages");
+  print("These are the available $languages");
   //  if (languages != null) setState(() => languages);
 }
 

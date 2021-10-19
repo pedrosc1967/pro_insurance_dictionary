@@ -14,8 +14,8 @@ pipeline {
                     checkout scm
                     sh "rm -rf brbuild_ios" //This removes the previous checkout of brbuild_ios if it exists.
                     sh "rm -rf ios/fastlane/brbuild_ios" //This removes the brbuild_ios from the fastlane directory if it somehow still exists
-                    sh "git clone https://github.com/pedrosc1967/insurance_dictionary.git"
-                    sh "cp /Users/aplanetbit/StudioProjects/insurance_dictionary/android/key.properties /Users/aplanetbit/.jenkins/workspace/'Dictionary of Insurance'/insurance_dictionary/android/key.properties"
+                    sh "git clone https://github.com/pedrosc1967/pro_insurance_dictionary.git"
+                    sh "cp /Users/aplanetbit/StudioProjects/pro_insurance_dictionary/android/key.properties /Users/aplanetbit/.jenkins/workspace/'Dictionary of Insurance Pro'/insurance_dictionary/android/key.properties"
 
                 }
             }
