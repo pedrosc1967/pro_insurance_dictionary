@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "689739244621",
+    "project_id": "pro-dictionary-of-insurance",
+    "storage_bucket": "pro-dictionary-of-insurance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689739244621:android:950a9d3cad836371e1e804",
+        "android_client_info": {
+          "package_name": "com.aplanetbit.pro.dictionary.insurance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689739244621-2k1fo2q3d51jh84tpkogcdi8ba56f1gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgQGYJkMhFCXo8iu-lL79HVFEh2vhVRdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689739244621-2k1fo2q3d51jh84tpkogcdi8ba56f1gs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689739244621-ut0kg2sl77nhsujln4k1iva8kes3ehrd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aplanetbit.pro.dictionary.of.insurance"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
